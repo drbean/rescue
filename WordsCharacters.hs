@@ -153,7 +153,7 @@ rescue	: V2;
 river	: CN;
 save	: V2;
 scene	: N2;
-suddenly	: AdV;
+sudden	: AP;
 surprising	: AP;
 thief	: CN;
 to_LOCPREP	: LocPrep;

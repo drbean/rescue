@@ -7,12 +7,12 @@ fun
 
 -- Adv
 
-	suddenly	: AdV;
 	early_tuesday_morning: Adv_time;
 
 -- AP
 
-	surprising	: AP;
+	sudden	: A;
+	surprising	: A;
 	local	: AP;
 
 -- Conj

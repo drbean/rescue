@@ -9,12 +9,12 @@ lin
 
 -- Adv
 
-	suddenly	= ParadigmsEng.mkAdV "suddenly";
 	early_tuesday_morning	= ParadigmsEng.mkAdv "early Tuesday morning";
 
 -- AP
 
-	surprising	= mkAP( mkA "surprising") ;
+	sudden	= mkA "sudden" ;
+	surprising	= mkA "surprising" ;
 	local	= mkAP( mkA "local") ;
 
 -- Conj
