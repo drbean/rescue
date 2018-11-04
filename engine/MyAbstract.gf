@@ -340,6 +340,8 @@ fun
 	whose_SG_RP	: CN -> RP;
 	whose_PL_RP	: CN -> RP;
 
+	PositA	: A -> AP;
+	PositAdvAdj	: A -> Adv;
 	more : CAdv;
 	ComparaAP : A -> NP -> AP;
 	ComparaAdv : CAdv -> A -> NP -> Adv;

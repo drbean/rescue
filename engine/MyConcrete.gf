@@ -797,6 +797,8 @@ lin
 	whose_SG_RP cn = GenRP singularNum cn;
 	whose_PL_RP cn = GenRP pluralNum cn;
 
+	PositA a = mkAP a;
+	PositAdvAdj a	= mkAdv a;
 	more	= more_CAdv;
 	ComparaAP a np = mkAP a np;
 	ComparaAdv cadv a np = mkAdv cadv a np;
