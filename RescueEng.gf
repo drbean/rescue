@@ -33,6 +33,7 @@ lin
 	river	= mkCN( mkN nonhuman (mkN "river") );
 	police_department	= mkCN( mkN nonhuman (mkN "police department") );
 	police_officer	= mkCN( mkN human (mkN "police officer") );
+	officer	= mkCN( mkN human (mkN "officer") );
 	life	= mkCN( mkN nonhuman (mkN "life" "lives") );
 	control	= mkN2( mkN nonhuman (mkN "control") ) of_PREP;
 	charge	= mkN2( mkN nonhuman (mkN "charge") ) against_RECIPIENTPREP;

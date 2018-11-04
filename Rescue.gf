@@ -31,6 +31,7 @@ fun
 	river	: CN;
 	police_department	: CN;
 	police_officer	: CN;
+	officer	: CN;
 	life	: CN;
 	control	: N2;
 	charge	: N2;
