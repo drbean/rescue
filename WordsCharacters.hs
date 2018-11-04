@@ -146,6 +146,7 @@ life	: CN;
 local	: AP;
 lose	: V2;
 Ontario	: PN;
+officer	: CN;
 police officer	: CN;
 police department	: CN;
 rescue	: V2;
