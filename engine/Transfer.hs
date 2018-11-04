@@ -23,8 +23,8 @@ import System.Environment.FindBin
 main :: IO ()
 main = do
 	path <- getProgPath
-	gr <- readPGF ( path ++ "/Communication.pgf" )
-	let Just eng = Map.lookup "CommunicationEng" (languages gr)
+	gr <- readPGF ( path ++ "/Rescue.pgf" )
+	let Just eng = Map.lookup "RescueEng" (languages gr)
 	let morpho = map fst (fullFormLexicon eng) ++ be_morphology
 	hClose stderr
 	hDuplicateTo stdout stderr

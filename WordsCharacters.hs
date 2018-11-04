@@ -8,7 +8,7 @@ import System.Environment.FindBin
 -- path = getProgPath
 -- file = path >>= \p -> return ( (++) p "/Happier.pgf")
 -- gr = file >>= \f -> return ( readPGF f )
-gr = readPGF "/home/drbean/GF/question/business/conflict/communication/Communication.pgf"
+gr = readPGF "/home/drbean/GF/question/conversation/story/rescue/Rescue.pgf"
 
 cat2funs :: String -> IO [CId]
 cat2funs cat = do
@@ -123,7 +123,41 @@ tags = [
 
 {-
 
-
+accident	: CN;
+against_RECIPIENTPREP	: RecipientPrep;
+all	: Predet;
+back to_LOCPREP	: LocPrep;
+car	: CN;
+car thief	: CN;
+charge	: N2;
+chase	: V2;
+control	: N2;
+drop	: V2;
+drive	: V2;
+early Tuesday	morning: Adv_time;
+for_ATTRIBUTEPREP	: AttributePrep;
+from_SOURCEPREP	: SourcePrep;
+go	: V2;
+help	: VV;
+help	: VV;
+in_LOCPREP	: LocPrep;
+into_LOCPREP	: LocPrep;
+life	: CN;
+local	: AP;
+lose	: V2;
+Ontario	: PN;
+police officer	: CN;
+police department	: CN;
+rescue	: V2;
+river	: CN;
+save	: V2;
+scene	: N2;
+suddenly	: AdV;
+surprising	: AP;
+thief	: CN;
+to_LOCPREP	: LocPrep;
+two	: Det;
+vehicle	: CN;
 
 -}
 

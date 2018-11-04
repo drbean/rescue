@@ -9,7 +9,7 @@ import qualified Data.Map as Map
 import Data.DRS
 
 import PGF2
-mport Communication
+import Rescue
 import Utility
 import Model
 
@@ -18,7 +18,7 @@ import Model
 -- import System.Environment.FindBin
 
 gr :: IO PGF
-gr = readPGF "./Communication.pgf"
+gr = readPGF "./Rescue.pgf"
 
 cat2funs :: String -> IO ()
 cat2funs cat = do
@@ -39,7 +39,7 @@ trans = id
 
 run f tests = do
   gr' <- gr
-  let Just eng = Map.lookup "CommunicationEng" (languages gr')
+  let Just eng = Map.lookup "RescueEng" (languages gr')
   let ss = map (chomp . lc_first) tests
   let p =  parse eng (startCat gr')
   let Just incompleteparse = readExpr "ParseIncomplete"
@@ -53,8 +53,10 @@ run f tests = do
   let zs = zip (map (++"\t") tests) ts
   putStrLn (unlines (map (\(x,y) -> x ++ (show y ) ) zs) )
 
+{-
+
 ans tests = do
-  gr	<- readPGF "./Communication.pgf"
+  gr	<- readPGF "./Rescue.pgf"
   let ss = map (chomp . lc_first) tests
   let ps = map ( parses gr ) ss
   let ts = map (map ( (linear gr) <=< transform ) ) ps
@@ -64,7 +66,7 @@ ans tests = do
 displayResult = fromMaybe "Nothing"
 
 reps tests = do
-  gr	<- readPGF "./Communication.pgf"
+  gr	<- readPGF "./Rescue.pgf"
   let ss = map (chomp . lc_first) tests
   let ps = map ( parses gr ) ss
   let ts = map (map (\x -> (((unmaybe . rep) x) (term2ref drsRefs var_e) ))) ps
@@ -72,7 +74,7 @@ reps tests = do
   putStrLn (unlines (map (\(x,y) -> x ++ (show y ) ) zs) )
 
 lf tests = do
-  gr  <- readPGF "./Communication.pgf"
+  gr  <- readPGF "./Rescue.pgf"
   let ss = map (chomp . lc_first) tests
   let ps = map ( parses gr ) ss
   let ts = map (map (\p -> drsToLF (((unmaybe . rep) p) (DRSRef "r1"))) ) ps
@@ -80,12 +82,14 @@ lf tests = do
   putStrLn (unlines (map (\(x,y) -> x ++ (show y ) ) zs) )
 
 fol tests = do
-  gr  <- readPGF "./Communication.pgf"
+  gr  <- readPGF "./Rescue.pgf"
   let ss = map (chomp . lc_first) tests
   let ps = map ( parses gr ) ss
   let ts = map (map (\p -> drsToFOL ( (unmaybe . rep) p (term2ref drsRefs var_e) ) ) ) ps
   let zs = zip (map (++"\t") tests) ts
   putStrLn (unlines (map (\(x,y) -> x ++ (show y ) ) zs) )
+
+-}
 
 dic_test = [
 

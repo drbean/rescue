@@ -1,9 +1,9 @@
-module Representation (module Representation, module Communication) where
+module Representation (module Representation, module Rescue) where
 
 import Data.DRS
 import Data.DRS.Show
 
-import Communication
+import Rescue
 import PGF
 
 import Model
